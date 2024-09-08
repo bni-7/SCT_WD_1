@@ -1,0 +1,137 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+    border-bottom: 2px solid #f39c12;
+}
+
+/* Change Navbar background on scroll */
+nav.scrolled {
+    background-color: #333;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+#home {
+    background-image: url('images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 68px;
+    color: #f2f5ee;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#menu {
+    background-color: #fff3e0;
+    text-align: center;
+}
+
+#menu .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#menu .menu-item {
+    max-width: 300px;
+}
+
+#menu .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#reservations {
+    background-color: #f9fbe7;
+    text-align: center;
+}
+
+#reservations img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+#contact {
+    background-color: #fce4ec;
+    text-align: center;
+}
+
+#contact img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
